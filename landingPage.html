@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+      <div class="container">
+        <div class="row">
+            <nav class="navbar">
+                <h1>Developer</h1>
+                <ul>
+                    <li> <a href="Home"> Home</a> </li>
+                    <li> <a href="About"> About us</a> </li>
+                    <li> <a href="Gallery"> Gallery</a> </li>
+                    <li> <a href="Contact"> Contact</a> </li>
+                </ul>
+         </nav>
+         <div class="content">
+            <h3 id="word">Hii, I am Roshni Gupta.</h3>
+            <p>I am FrontEnd Developer. I daily tweets about  HTML , CSS And JavaScript. </p>
+            <button onclick="convertText()">Register Now</button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function convertText(){
+            const textItem = document.querySelector("#word").innerHTML
+           const myNewWord = textItem.replace("Roshni","Gorakh")
+           document.querySelector("#word").innerHTML = myNewWord;
+         }
+
+    </script>
+    </body>
+</html>
